@@ -1,7 +1,7 @@
 # 簡介
 
 <p align="center">
-    <img src="Screenshots/介面1.png" width="80%"></img>
+    <img src="Screenshots/介面1.png" width="30%"></img>
 </p>
 
 <p align="center">
