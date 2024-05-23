@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <img src="Screenshots/介面2.gif" width="30%"></img>
+    <img src="Screenshots/介面2.gif" width="45%"></img>
 </p>
 
 <p align="center">
