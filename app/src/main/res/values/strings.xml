@@ -1,0 +1,11 @@
+<resources >
+    <string name="app_name" style="@colors/titleColor"></string>
+
+    <string-array name="suggest_title">
+        <item>選擇建議項目</item>
+        <item>服務態度</item>
+        <item>服務項目</item>
+        <item>APP建議</item>
+        <item>其他建議</item>
+    </string-array>>
+</resources>

@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFD4E0D2"
+    android:orientation="vertical"
+    tools:context=".customized">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="訂購人姓名："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="請輸入姓名"
+                        android:inputType="textPersonName"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/textView22222"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="聯絡電話："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="請輸入電話"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="取餐方式："
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="213dp"
+                            android:layout_height="40dp">
+
+                            <RadioButton
+                                android:id="@+id/btn_self"
+                                android:layout_width="75dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="5dp"
+                                android:checked="true"
+                                android:text="自取"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+
+                            <RadioButton
+                                android:id="@+id/btn_out"
+                                android:layout_width="75dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="110dp"
+                                android:layout_marginTop="-35dp"
+                                android:text="外送"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/out_adr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="外送地址："
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="請輸入地址"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="－－－－－－－－－－－－－－－－－－－－－－－－－－－"
+            android:textColor="#085952"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="174dp"
+                    android:layout_height="281dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_1"
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#009889"
+                            android:text="茶類"
+                            android:textSize="20sp"
+                            android:visibility="visible"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/mon_1"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#78009688"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_2"
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#78009688"
+                            android:text="Button"
+                            android:textSize="20sp"
+                            android:visibility="invisible"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/mon_2"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#009889"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_3"
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#78009688"
+                            android:text="Button"
+                            android:textSize="20sp"
+                            android:visibility="invisible"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/mon_3"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#009889"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_4"
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#78009688"
+                            android:text="Button"
+                            android:textSize="20sp"
+                            android:visibility="invisible"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/mon_4"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#009889"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_5"
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#78009688"
+                            android:text="Button"
+                            android:textSize="20sp"
+                            android:visibility="invisible"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/mon_5"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="#009889"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="20dp"
+                    android:layout_height="267dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="||||||"
+                    android:textColor="#009688"
+                    android:textSize="34sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/s_i_1"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="244dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/s_1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="糖量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/s_1_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_1_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_1_3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="少糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_1_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_1_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="無糖"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/i_1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView1111"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="冰量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/i_1_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多冰"
+                                    android:textSize="20sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_1_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_1_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="少冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_1_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_1_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="去冰"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s_i_2"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="244dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/s_2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView222222"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="糖量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/s_2_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_2_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_2_3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="少糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_2_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_2_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="無糖"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/i_2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView2222"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="冰量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/i_2_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多冰"
+                                    android:textSize="20sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_2_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_2_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="少冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_2_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_2_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="去冰"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s_i_3"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="244dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/s_3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="糖量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/s_3_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_3_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_3_3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="少糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_3_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_3_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="無糖"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/i_3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView3333"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="冰量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/i_3_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多冰"
+                                    android:textSize="20sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_3_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_3_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="少冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_3_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_3_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="去冰"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s_i_4"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="244dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/s_4"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView44"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="糖量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/s_4_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_4_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_4_3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="少糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_4_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_4_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="無糖"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/i_4"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView4444"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="冰量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/i_4_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多冰"
+                                    android:textSize="20sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_4_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_4_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="少冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_4_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_4_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="去冰"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s_i_5"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="244dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/s_5"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="糖量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/s_5_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_5_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_5_3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="少糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_5_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微糖"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/s_5_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="無糖"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:id="@+id/i_5"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="冰量"
+                                    android:textColor="#009688"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/i_5_5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="多冰"
+                                    android:textSize="20sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_5_4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="正常冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_5_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="少冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_5_2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="微冰"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/i_5_1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="去冰"
+                                    android:textSize="18sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="－－－－－－－－－－－－－－－－－－－－－－－－－－－"
+                android:textColor="#085952"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/cup_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/cup_btn_1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outside"
+                    android:gravity="center"
+                    android:text="數量"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cup_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/count_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/plus_1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cup_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/cup_btn_2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outside"
+                    android:gravity="center"
+                    android:text="數量"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:backgroundTint="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cup_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/count_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/plus_2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cup_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/cup_btn_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outside"
+                    android:gravity="center"
+                    android:text="數量"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:backgroundTint="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cup_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_3"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/count_3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/plus_3"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cup_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/cup_btn_4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outside"
+                    android:gravity="center"
+                    android:text="數量"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:backgroundTint="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cup_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_4"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/count_4"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/plus_4"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cup_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/cup_btn_5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outside"
+                    android:gravity="center"
+                    android:text="數量"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:backgroundTint="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cup_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_5"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+
+                        <TextView
+                            android:id="@+id/count_5"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/plus_5"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/outside2"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="－－－－－－－－－－－－－－－－－－－－－－－－－－－"
+            android:textColor="#085952"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_re"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="如果有不同的需求可以備註唷！"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="－－－－－－－－－－－－－－－－－－－－－－－－－－－"
+            android:textColor="#085952"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ALL_mon"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="總金額"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/every_mon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ALL_TXT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/ALL_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/ALL_i"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/s_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/s_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/s_3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/s_4_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/s_5_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/i_1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/i_2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/i_3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/i_4_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/i_5_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outside3"
+                android:gravity="center"
+                android:text="返回"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="　　　" />
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outside3"
+                android:gravity="center"
+                android:text="確認訂單"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cup_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/count_ALL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ALL_mon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="記錄總金額"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
